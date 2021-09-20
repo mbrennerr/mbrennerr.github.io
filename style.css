@@ -85,6 +85,12 @@ ul {
   border: solid black 1px;
   margin-bottom: 10px;
   margin-top: 120px;
+  transition: all 0.5s ease-in-out;
+}
+
+.heroContainer:hover{
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 
 /* Retângulo com o Nome e o cargo */
@@ -94,6 +100,10 @@ ul {
   align-self: flex-start;
   padding: 60px 60px;
   margin-left: 20px;
+}
+.nameAndTitleBox:hover{
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 .nameAndTitleBox h1 {
   font-size: 30px;
@@ -123,6 +133,11 @@ ul {
   align-items: center;
   border: solid black 1px;
   margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.skillsBoardContainer:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 .skills {
   display: grid;
@@ -238,6 +253,11 @@ span.text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
+}
+.projectsContainer:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 
 .container {
@@ -269,6 +289,11 @@ span.text {
   padding: 40px;
   border: solid 1px;
   margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.aboutMeContainer:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 
 .foto {
@@ -306,6 +331,7 @@ span.text {
   overflow: hidden;
 }
 
+
 /* @-webkit-keyframes move_eye {
   from {
     margin-left: -20%;
@@ -338,7 +364,7 @@ span.text {
   }
 }
 
-.talWithMeContainer {
+.talkWithMeContainer {
   width: 80%;
   height: 100%;
   background-color: #7c5e99;
@@ -351,6 +377,11 @@ span.text {
   justify-content: center;
   align-items: center;
   padding: 40px;
+  transition: all 0.5s;
+}
+.talkWithMeContainer:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 .footer {
   width: 80%;
