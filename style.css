@@ -100,6 +100,7 @@ ul {
   align-self: flex-start;
   padding: 60px 60px;
   margin-left: 20px;
+  
 }
 .nameAndTitleBox:hover{
   transform: translateY(-10px);
@@ -287,9 +288,15 @@ span.text {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  border: solid 1px;
+  border:inherit; 1px;
   margin-bottom: 10px;
   transition: all 0.5s;
+  
+}
+
+.border-text{
+  filter: drop-shadow(2px 4px 6px black);
+  box-shadow: 0px 15px 10px #f25a70;
 }
 .aboutMeContainer:hover {
   transform: translateY(-10px);
