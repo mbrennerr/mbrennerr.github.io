@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Press Start 2P", cursive;
+  background-color:#967aa1;
   /* display: flex;
     align-items: center;
     width: 100%; */
@@ -16,6 +17,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  
 }
 
 /* Header MenuBar */
@@ -23,12 +25,12 @@ main {
   background-color: #5995da;
   position: fixed;
   top: 0;
-  width: 80%;
+  width: 100%;
   padding: 20px 50px;
   display: flex;
   align-items: center;
   border: solid 1px;
-  box-shadow: 0px 15px 10px #f25a70;
+  box-shadow: 0px 15px 10px #967aa1;
   z-index: 30;
 }
 
@@ -71,14 +73,14 @@ ul {
 }
 
 .heroContainer {
-  background-image: url("./IMAGES/hero3.jpg");
+  background-image: url("./Assets/rsz_hero3.jpg");
   background-size: cover;
   background-position: center;
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   height: 800px;
   background-color: rgb(124, 94, 153);
   color: #ffffff;
@@ -123,7 +125,7 @@ ul {
 }
 
 .skillsBoardContainer {
-  width: 80%;
+  width: 100%;
   height: 100%;
   border: solid 1px;
   background-color: #f25a70;
@@ -245,7 +247,7 @@ span.text {
 }
 
 .projectsContainer {
-  width: 80%;
+  width: 100%;
   height: 900px;
   background-color: #000000;
   color: #ffffff;
@@ -276,7 +278,7 @@ span.text {
 }
 
 .aboutMeContainer {
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-color: #7c5e99;
   color: #ffffff;
@@ -309,7 +311,7 @@ span.text {
   width: 250px;
   height: 250px;
   position: relative;
-  background: url("IMAGES/hero2.jpg");
+  background: url("Assets/hero2.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 25px;
@@ -328,6 +330,7 @@ span.text {
   inset: 0;
   /* -webkit-animation: 4s linear 3s infinite alternate move_eye; */
   animation: 10s linear 0s infinite move_eye;
+  
 }
 
 .legendaryBar {
@@ -391,7 +394,7 @@ span.text {
   transition: all 0.5s;
 }
 .footer {
-  width: 80%;
+  width: 100%;
   height: 100px;
   background-color: rgb(22, 25, 26);
   color: #ffffff;
@@ -401,4 +404,5 @@ span.text {
   padding: 20px 50px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
