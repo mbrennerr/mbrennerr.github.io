@@ -292,6 +292,7 @@ span.text {
   .startButton{
     background-color: #6930c3;
     border-radius:10px;
+    padding:5px;
   }
   .projectsDescription{
   background: rgba(189, 115, 179, 0.9);
