@@ -87,7 +87,7 @@ ul {
   background-color: rgb(124, 94, 153);
   color: #ffffff;
   border: solid black 1px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 120px;
   transition: all 0.5s ease-in-out;
 }
@@ -124,21 +124,37 @@ ul {
 .skillsBoardContainer {
   width: 100%;
   height: 100%;
-  border: solid 1px;
   background-color: #f25a70;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 70%;
+  justify-items: center;
   align-items: center;
   border: solid black 1px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   transition: all 0.5s;
+  padding: 120px;
 }
 .skillsBoardContainer:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
 }
+
+.skillsTitle {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Press Start 2P", cursive;
+  padding: 30px 20px;
+  grid-column: 1/3;
+  margin-bottom:40px;
+  display:grid;
+}
+
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -231,7 +247,7 @@ span.text {
   --learning: 60%;
 }
 #react {
-  --learning: 20%;
+  --learning: 70%;
 }
 #nodeJs {
   --learning: 10%;
@@ -242,19 +258,23 @@ span.text {
 #outSystems {
   --learning: 40%;
 }
+#Redux {
+  --learning: 50%;
+}
 
 .projectsContainer {
   width: 100%;
-  height: 700px;
+  height: 100%;
   background-color: #000000;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: grid;
-  grid-template-rows: 20% 75%;
+  grid-template-rows: 10% 90%;
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
   transition: all 0.5s;
+  padding:130px;
 }
 .projectsContainer:hover {
   transform: translateY(-10px);
@@ -271,7 +291,7 @@ span.text {
   font-family: "Press Start 2P", cursive;
   padding: 30px;
   grid-column: 1/3;
-  }
+}
 
 .carouselMaster {
   width: 70%;
@@ -327,45 +347,66 @@ span.text {
   height: 100%;
   background-color: #7c5e99;
   color: #ffffff;
-  font-family: "Fira Code", monospace;
-  font-size: 30px;
-  line-height: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
+  /* line-height: 36px; */
+  display: grid;
+  grid-template-rows: 10% 20% 65% 5%;
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
-  padding: 40px;
-  border:inherit; 1px;
-  margin-bottom: 10px;
+  padding: 110px;
+  margin-bottom: 20px;
   transition: all 0.5s;
   
 }
 
-.border-text{
-  filter: drop-shadow(2px 4px 6px black);
-  box-shadow: 0px 15px 10px #f25a70;
-}
 .aboutMeContainer:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
 }
 
+.aboutMeTitle {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Press Start 2P", cursive;
+  padding: 30px 20px;
+  grid-column: 1/3;
+  margin-bottom:30px;
+  display:grid;
+}
+
 .foto {
-  overflow: hidden;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  position: relative;
+  width: 150px;
+  height: 150px;
   background: url("Assets/hero2.jpg");
   background-position: center;
   background-size: cover;
-  margin-bottom: 25px;
   border: solid 1px;
   box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.5);
+  grid-column: 1/3;
 }
 
-/* legendary */
+.aboutMeText{
+  border: inherit 1px;
+  filter: drop-shadow(2px 4px 6px black);
+  box-shadow: 0px 15px 10px #f25a70;
+  font-family: "Fira Code", monospace;
+  font-size: 25px;
+}
 
+.legendaryBar {
+  background-color: #7c5e99;
+  height: 35px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1/3;
+}
 .legendaryMessage {
   color: white;
   float: right;
@@ -378,13 +419,6 @@ span.text {
   
 }
 
-.legendaryBar {
-  background-color: #7c5e99;
-  height: 35px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
 
 
 /* @-webkit-keyframes move_eye {
@@ -419,7 +453,7 @@ span.text {
   }
 }
 
-.talkWithMeContainer {
+/* .talkWithMeContainer {
   width: 80%;
   height: 100%;
   background-color: #7c5e99;
@@ -437,7 +471,7 @@ span.text {
 .talkWithMeContainer:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
-}
+} */
 .footer {
   width: 100vw;
   height: 100px;
