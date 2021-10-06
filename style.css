@@ -24,7 +24,13 @@ main {
 
 /* Header MenuBar */
 .menuContainer {
-  background-color: #5995da;
+  background: linear-gradient(164deg, #3d64d4, #b837d4);
+  background-size: 400% 400%;
+
+  -webkit-animation: backgroundMenuContainer 8s ease infinite;
+  animation: backgroundMenuContainer 8s ease infinite;
+
+  /* background-color: #3D64D4; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -34,6 +40,18 @@ main {
   border: solid 1px;
   box-shadow: 0px 15px 10px #967aa1;
   z-index: 30;
+}
+
+
+@-webkit-keyframes backgroundMenuContainer {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+@keyframes backgroundMenuContainer {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
 }
 
 #btnCv {
@@ -122,9 +140,15 @@ ul {
 
 
 .skillsBoardContainer {
+  background: linear-gradient(164deg, #f25a81, #b837d4);
+  background-size: 400% 400%;
+
+  -webkit-animation: backgroundSkillAnimation 6s ease infinite;
+  animation: backgroundSkillAnimation 6s ease infinite;
+    
   width: 100%;
   height: 100%;
-  background-color: #f25a70;
+  /* background-color: #f25a70; */
   color: #ffffff;
   display: grid;
   grid-template-columns: 1fr;
@@ -136,6 +160,19 @@ ul {
   transition: all 0.5s;
   padding: 120px;
 }
+
+@-webkit-keyframes backgroundSkillAnimation {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+@keyframes backgroundSkillAnimation {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+
+
 .skillsBoardContainer:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
@@ -345,7 +382,13 @@ span.text {
 .aboutMeContainer {
   width: 100%;
   height: 100%;
-  background-color: #7c5e99;
+
+  background: linear-gradient(164deg, #3d64d4, #b837d4);
+  background-size: 400% 400%;
+
+  -webkit-animation: aboutMeContainerBackgroundAnimation 8s ease infinite;
+  animation: aboutMeContainerBackgroundAnimation 8s ease infinite;
+  /* background-color: #7c5e99; */
   color: #ffffff;
   
   /* line-height: 36px; */
@@ -358,6 +401,17 @@ span.text {
   margin-bottom: 20px;
   transition: all 0.5s;
   
+}
+
+@-webkit-keyframes aboutMeContainerBackgroundAnimation {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+@keyframes aboutMeContainerBackgroundAnimation {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
 }
 
 .aboutMeContainer:hover {
@@ -401,7 +455,7 @@ span.text {
 }
 
 .legendaryBar {
-  background-color: #7c5e99;
+  /* background-color: #7c5e99; */
   height: 35px;
   width: 100%;
   position: relative;
