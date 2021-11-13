@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: blue;
+  font-family: "JetBrains Mono", cursive;
+  width: 100%;
+  height: 100%;
+}
+
+header nav.menuContainer {
+  background-color: #3d64d4;
+  width: 100%;
+  padding: 20px, 50px;
+  display: flex;
+  align-items: center;
+  border: solid, 1px;
+  box-shadow: 0px 15px 10px #aa61c7;
+  z-index: 30;
+  position: fixed;
+}
+header a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+header .menuContainer :nth-child(6) {
+  background-color: #7c5e99;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+section.heroContainer {
+  background-image: url("./assets/images/Novo_Hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background-color: #7c5e99;
+  border: solid black 1px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+section.skillsBoardContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #f25a70;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 70%;
+  justify-items: center;
+  align-items: center;
+  border: solid black 1px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  padding: 120px;
+}
+
+section.projectsContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  transition: all 0.5s;
+  padding: 130px;
+}
+section.projectsContainer .projectsContainer:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+section.aboutMeContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 30px 20px;
+  grid-column: 1/3;
+  margin-bottom: 30px;
+  display: grid;
+}
+
+footer.footerContainer {
+  width: 100vw;
+  height: 100px;
+  background-color: #16191a;
+  color: #ffffff;
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  border: solid 1px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}/*# sourceMappingURL=main.css.map */

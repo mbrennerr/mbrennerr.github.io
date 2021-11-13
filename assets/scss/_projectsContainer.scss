@@ -1,0 +1,19 @@
+section.projectsContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  transition: all 0.5s;
+  padding:130px;
+
+  .projectsContainer:hover {
+    transform: translateY(-10px);
+    transition: all 0.5s;
+  }
+}

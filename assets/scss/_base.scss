@@ -1,0 +1,13 @@
+@import 'variables';
+
+
+
+
+
+body {
+  color: $defaultTextColor;
+  background-color: $defaultBackGroundColor;
+  font-family: $defaultFont;
+  width: 100%;
+  height:100%;
+}
