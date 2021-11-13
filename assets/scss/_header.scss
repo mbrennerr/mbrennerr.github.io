@@ -1,25 +1,33 @@
 header {
   nav.menuContainer {
-    background-color:#3d64d4;
-    width:100%;
-    padding: 20px, 50px;
-    display: flex;
-    align-items: center;
-    border:solid, 1px;
-    box-shadow: 0px 15px 10px #aa61c7;
-    z-index: 30;
     position:fixed;
+    top:0;
+    left:0;
+    z-index: 30;
+    @include defaultMenus();
+    align-items: center;
+    background-color:#3d64d4;
+    box-shadow: 0px 15px 10px #aa61c7;
+    
     
   }
 
   a {
-    text-decoration: none;
-    cursor: pointer;
     opacity:0.8;
     padding: 0 10px;
     transition: all 0.5s ease-in-out;
-    color: $defaultTextColor; 
+    @include highrelief();
+    
+    &:hover {
+      color:#29b45e;
+      // font-size: 25px;
+      // transition: all 0.5s ease-in-out;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      // pading: 10px 20px;
+    }
   }
+
+  
 
   .menuContainer :nth-child(6) {
     background-color: #7c5e99;

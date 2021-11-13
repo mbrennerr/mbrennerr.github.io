@@ -1,7 +1,5 @@
 
-// máquina de escrever
-
-
+// função que escreve job title;
 
 function typeWrite(elemento) {
   
@@ -22,18 +20,18 @@ typeWrite(titulo);
 
 
 
-
+// função que seta parametros para os elementos Reveals;
 const sr = ScrollReveal({
   origin:`${''}`,
-  distance: "-150px",
-  duration: 3000,
+  distance: "150px",
+  duration: 2500,
   reset: true,
+  
 });
 
-console.log(sr)
 
   sr.reveal('.menuContainer',{
-    origin: 'bottom',
+    origin: 'top',
     delay: 200,    
   });
 
@@ -43,16 +41,16 @@ console.log(sr)
     
   });
 
-  // sr.reveal('nameAndTitleBox',{
-  //   origin: 'right',
-  //   delay: 200,
+  sr.reveal('.nameAndTitleBox',{
+    origin: 'top',
+    delay: 300
     
-  // });
+  });
 
 
 
   sr.reveal('.skillsBoardContainer',{
-    origin: 'right',
+    origin: 'left',
     delay: 200,
     
   });
@@ -64,7 +62,7 @@ console.log(sr)
   });
 
   sr.reveal('.aboutMeContainer',{
-    origin: 'right',
+    origin: 'left',
     delay: 200,
     
   });
@@ -83,3 +81,4 @@ console.log(sr)
   // // });
 
 
+  
