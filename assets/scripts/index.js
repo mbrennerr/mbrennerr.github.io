@@ -1,4 +1,18 @@
 
+// Botão do Menu Mobile
+
+const btnMobile = document.getElementById('btnMobile');
+
+function toggleMenu() {
+  const nav = document.getElementById('navFromMenu');
+  nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+
+
+
+
 
 // função que escreve job title;
 

@@ -11,7 +11,7 @@ $defaultBackGroundColor: #FE6D3F;
 // MIXINS
 
 @mixin defaultMenus() {
-  width: 100%;
+  width: 100vw;
   height: 100px;
   display: flex;
 
