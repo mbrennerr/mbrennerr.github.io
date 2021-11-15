@@ -38,23 +38,22 @@
     }
   }
 
-  @media (max-width: 600px){
-    
+  @include mobile{
 
-      #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right:0px;
-        background:#3d64d4;
-        z-index: 1000;
-        height: 0px;
-        transition: .6s;        
-        visibility: hidden;
-        overflow-y: hidden;
+    #menu{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right:0px;
+      background:#3d64d4;
+      z-index: 1000;
+      height: 0px;
+      transition: .6s;        
+      visibility: hidden;
+      overflow-y: hidden;
 
-      }
+    }
 
     #navFromMenu.active #menu {
       height: 100vh;

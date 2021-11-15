@@ -35,7 +35,7 @@ section.skillsBoardContainer {
 
     }
 
-    @media (max-width: 600px){
+    @include mobile{
       grid-template-columns: 1fr 1fr;
       font-size: 20px;
       grid-gap: 5px;

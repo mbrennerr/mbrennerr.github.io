@@ -1,29 +1,27 @@
 .heroContainer {
-  background-image: url("./assets/images/Novo_Hero.jpeg");
+  background-image: url("../images/Novo_Hero.jpeg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   @include containersDefaults();
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
   background-color: #7c5e99;
   border: solid black 1px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  transition: all 0.5s ease-in-out;
-
   
   .nameAndTitleBox {
     display: grid;
-    align-self: flex-start;
+    // border-radius: 5px;
+    width:90%;
     padding: 60px 60px;
-    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 35%;
+    border-top-left-radius: 35%;
     @include highrelief();
 
-    
-    
+        
     #titleName {
-      font-size: 40px;
+      font-size: 30px;
       margin-bottom: 10px;
       color:#f25a70;
     }
@@ -42,6 +40,20 @@
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
       margin-top: 40px;
      
+    }
+
+    @include mobile {
+      
+      border:solid 1px #202020;
+      
+
+      #titleName {
+        font-size: 20px;
+      }
+
+      #jobTitle {
+        font-size: 10px;
+      }
     }
 
   }

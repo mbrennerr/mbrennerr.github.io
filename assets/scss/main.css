@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 html {
@@ -120,29 +122,31 @@ body ul {
 }
 
 .heroContainer {
-  background-image: url("./assets/images/Novo_Hero.jpeg");
+  background-image: url("../images/Novo_Hero.jpeg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #7c5e99;
-  border: solid black 1px;
+  display: grid;
   margin-bottom: 20px;
   margin-top: 20px;
-  transition: all 0.5s ease-in-out;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  background-color: #7c5e99;
+  border: solid black 1px;
 }
 .heroContainer .nameAndTitleBox {
   display: grid;
-  align-self: flex-start;
+  width: 90%;
   padding: 60px 60px;
-  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 35%;
+  border-top-left-radius: 35%;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
 .heroContainer .nameAndTitleBox #titleName {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 10px;
   color: #f25a70;
 }
@@ -159,10 +163,24 @@ body ul {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   margin-top: 40px;
 }
+@media (max-width: 600px) {
+  .heroContainer .nameAndTitleBox {
+    border: solid 1px #202020;
+  }
+  .heroContainer .nameAndTitleBox #titleName {
+    font-size: 20px;
+  }
+  .heroContainer .nameAndTitleBox #jobTitle {
+    font-size: 10px;
+  }
+}
 
 section.skillsBoardContainer {
   width: 100vw;
   height: 100vh;
+  display: grid;
+  margin-bottom: 20px;
+  margin-top: 20px;
   background-color: #f25a70;
   display: grid;
   grid-template-columns: 1fr;
@@ -210,6 +228,9 @@ section.skillsBoardContainer .skillsGroup .skillSVG {
 section.projectsContainer {
   width: 100vw;
   height: 100vh;
+  display: grid;
+  margin-bottom: 20px;
+  margin-top: 20px;
   background-color: #000000;
   color: #ffffff;
   margin-bottom: 20px;
@@ -228,6 +249,9 @@ section.projectsContainer:hover {
 section.aboutMeContainer {
   width: 100vw;
   height: 100vh;
+  display: grid;
+  margin-bottom: 20px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

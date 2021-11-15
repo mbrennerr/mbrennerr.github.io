@@ -10,25 +10,36 @@ $defaultBackGroundColor: #FE6D3F;
 
 // MIXINS
 
+// configura menu e footer;
 @mixin defaultMenus() {
   width: 100vw;
   height: 100px;
   display: flex;
 
 }
+// configura os containers principais;
+@mixin containersDefaults() {
+  width: 100vw;
+  height:100vh;
+  display: grid;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-
-
+// efeito de animação dos containers;
 @mixin containersHover() {
  cursor: pointer;
 }
 
 
-@mixin containersDefaults() {
-  width: 100vw;
-  height:100vh;
-}
-
+// adiciona o efeito de autorelevos nos intens;
 @mixin highrelief() {
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+
+// include padrão para adicionar estilo mobile nos componentes;
+@mixin mobile {
+  @media (max-width: 600px){
+    @content;
+  }
 }
