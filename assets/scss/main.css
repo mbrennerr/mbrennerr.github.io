@@ -174,10 +174,16 @@ body ul {
     height: 100%;
   }
   .heroContainer .nameAndTitleBox #titleName {
-    font-size: 20px;
+    font-size: 10px;
   }
   .heroContainer .nameAndTitleBox #jobTitle {
     font-size: 10px;
+  }
+  .heroContainer .nameAndTitleBox #btnCv {
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 30px 10px;
+    width: 90%;
   }
 }
 
