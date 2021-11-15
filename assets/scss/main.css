@@ -64,9 +64,6 @@ body ul {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 600px) {
-  .menuContainer #btnMobile {
-    display: block;
-  }
   .menuContainer #menu {
     display: block;
     position: absolute;
@@ -74,14 +71,51 @@ body ul {
     top: 70px;
     right: 0px;
     background: #3d64d4;
+    z-index: 1000;
     height: 0px;
     transition: 0.6s;
-    z-index: 1000;
     visibility: hidden;
+    overflow-y: hidden;
   }
   .menuContainer #navFromMenu.active #menu {
-    height: calc(100vh - 70px);
+    height: 100vh;
     visibility: visible;
+    overflow-y: auto;
+  }
+  .menuContainer #btnMobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  .menuContainer #hamburguer {
+    color: #202020;
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+  .menuContainer #hamburguer::after, .menuContainer #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .menuContainer #navFromMenu.active #hamburguer {
+    border-top-color: transparent;
+  }
+  .menuContainer #navFromMenu.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  .menuContainer #navFromMenu.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
 

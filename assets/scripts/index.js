@@ -3,12 +3,15 @@
 
 const btnMobile = document.getElementById('btnMobile');
 
-function toggleMenu() {
+function toggleMenu(event) {
+  if(event.type === 'touchstart') event.preventDefault(); 
   const nav = document.getElementById('navFromMenu');
   nav.classList.toggle('active');
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
 
 
 

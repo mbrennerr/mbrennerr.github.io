@@ -39,9 +39,7 @@
   }
 
   @media (max-width: 600px){
-      #btnMobile{
-        display: block;
-    }
+    
 
       #menu{
         display: block;
@@ -50,19 +48,56 @@
         top: 70px;
         right:0px;
         background:#3d64d4;
+        z-index: 1000;
         height: 0px;
         transition: .6s;        
-        z-index: 1000;
         visibility: hidden;
+        overflow-y: hidden;
 
       }
 
     #navFromMenu.active #menu {
-      height: calc(100vh - 70px);
+      height: 100vh;
       visibility:visible;
+      overflow-y: auto;
     }
 
-    
+    #btnMobile{
+      display: flex;
+      padding: .5rem 1rem;
+      font-size:1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: .5rem;
+    }
+    #hamburguer{
+      color: #202020;
+      display: block;
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before{
+      content:'';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top:5px;
+      transition: .3s;
+      position: relative;
+    }
+
+    #navFromMenu.active #hamburguer {
+      border-top-color: transparent;
+    }
+    #navFromMenu.active #hamburguer::before{
+      transform: rotate(135deg);
+    }
+    #navFromMenu.active #hamburguer::after{
+      transform: rotate(-135deg);
+      top: -7px;
+    }
   }
 
 
