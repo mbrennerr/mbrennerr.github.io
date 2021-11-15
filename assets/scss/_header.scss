@@ -44,21 +44,25 @@
     }
 
       #menu{
-        display: none;
+        display: block;
         position: absolute;
         width: 100%;
         top: 70px;
         right:0px;
         background:#3d64d4;
-        height: calc(100vh);
+        height: 0px;
+        transition: .6s;        
         z-index: 1000;
+        visibility: hidden;
 
       }
 
     #navFromMenu.active #menu {
-      display:block;
+      height: calc(100vh - 70px);
+      visibility:visible;
     }
 
+    
   }
 
 
