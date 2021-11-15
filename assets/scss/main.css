@@ -203,7 +203,6 @@ body ul {
 }
 .skillsBoardContainer .titleContainer {
   grid-column: 1/3;
-  border: solid black 1px;
   display: grid;
   justify-content: end;
   width: 90%;
@@ -212,7 +211,6 @@ body ul {
   margin-bottom: 40px;
   color: aliceblue;
   font-size: 50px;
-  border: solid black 1px;
 }
 @media (max-width: 600px) {
   .skillsBoardContainer #boardTitle {
@@ -220,14 +218,13 @@ body ul {
   }
 }
 .skillsBoardContainer #skillsContainer {
-  border: solid 1px black;
   width: 90%;
 }
 .skillsBoardContainer #skills {
   display: grid;
   font-size: 40px;
   grid-template-columns: 1fr 1fr;
-  border: solid 1px black;
+  gap: 30px;
 }
 @media (max-width: 600px) {
   .skillsBoardContainer #skills {
@@ -235,6 +232,7 @@ body ul {
     font-size: 20px;
     grid-gap: 5px;
     grid-gap: 5px;
+    gap: 10px;
   }
 }
 

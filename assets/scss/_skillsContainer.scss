@@ -18,13 +18,14 @@
 
   #boardTitle {
     @include defaultContainersNames();
+
     @include mobile{
       font-size: 20px;
     }
   }
 
   #skillsContainer {
-    border: solid 1px black;
+    // border: solid 1px black;
     width: 90%;
   }
 
@@ -32,7 +33,9 @@
     display: grid;
     font-size: 40px;
     grid-template-columns: 1fr 1fr;
-    border: solid 1px black;
+    // border: solid 1px black;
+    gap: 30px;
+    
     
        
 
@@ -42,6 +45,7 @@
     font-size: 20px;
     grid-gap: 5px;
     grid-gap:5px;
+    gap:10px
     
     }  
   }

@@ -42,14 +42,14 @@ $defaultBackGroundColor: #FE6D3F;
   margin-bottom: 40px;
   color:aliceblue;
   font-size:50px;
-  border: solid black 1px;
+  // border: solid black 1px;
   
   
 }
 // configura as divs que contem os nomes dos Containers;
 @mixin defaultBoardsTitleContainers {
   grid-column: 1/3;
-  border: solid black 1px;
+  // border: solid black 1px;
   display: grid;
   justify-content: end;
   width: 90%;
