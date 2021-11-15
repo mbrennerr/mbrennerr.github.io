@@ -8,6 +8,11 @@
   justify-items: center;
   background-color: #7c5e99;
   border: solid black 1px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
   
   .nameAndTitleBox {
     display: grid;
@@ -43,10 +48,9 @@
     }
 
     @include mobile {
-      
-      border:solid 1px #202020;
-      
 
+      height: 100%;
+      
       #titleName {
         font-size: 20px;
       }

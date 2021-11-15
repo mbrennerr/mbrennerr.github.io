@@ -136,6 +136,12 @@ body ul {
   background-color: #7c5e99;
   border: solid black 1px;
 }
+@media (max-width: 600px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+}
 .heroContainer .nameAndTitleBox {
   display: grid;
   width: 90%;
@@ -165,7 +171,7 @@ body ul {
 }
 @media (max-width: 600px) {
   .heroContainer .nameAndTitleBox {
-    border: solid 1px #202020;
+    height: 100%;
   }
   .heroContainer .nameAndTitleBox #titleName {
     font-size: 20px;
