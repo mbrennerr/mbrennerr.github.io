@@ -89,7 +89,7 @@ body ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #7c5e99;
   border: solid black 1px;
@@ -124,7 +124,7 @@ body ul {
 }
 
 section.skillsBoardContainer {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #f25a70;
   display: grid;
@@ -152,13 +152,25 @@ section.skillsBoardContainer .skillsGroup .skillName {
 }
 section.skillsBoardContainer .skillsGroup .skillSVG {
   background-color: #202020;
+  font-size: 100px;
   padding: 20px;
   border-radius: 5%;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
+@media (max-width: 600px) {
+  section.skillsBoardContainer .skillsGroup {
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    grid-gap: 5px;
+    grid-gap: 5px;
+  }
+  section.skillsBoardContainer .skillsGroup .skillSVG {
+    padding: 5px;
+  }
+}
 
 section.projectsContainer {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #000000;
   color: #ffffff;
@@ -176,7 +188,7 @@ section.projectsContainer:hover {
 }
 
 section.aboutMeContainer {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -17,13 +17,15 @@ $defaultBackGroundColor: #FE6D3F;
 
 }
 
+
+
 @mixin containersHover() {
  cursor: pointer;
 }
 
 
 @mixin containersDefaults() {
-  width: 100%;
+  width: 100vw;
   height:100vh;
 }
 

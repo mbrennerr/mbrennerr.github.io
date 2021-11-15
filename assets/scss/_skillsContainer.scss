@@ -28,13 +28,23 @@ section.skillsBoardContainer {
 
     .skillSVG{
       background-color:#202020;
+      font-size: 100px;
       padding:20px;
       border-radius: 5%;
       @include highrelief();
 
     }
 
+    @media (max-width: 600px){
+      grid-template-columns: 1fr 1fr;
+      font-size: 20px;
+      grid-gap: 5px;
+      grid-gap:5px;
+      .skillSVG{
+        padding:5px;
 
+      }
+    }  
   }
 
 
