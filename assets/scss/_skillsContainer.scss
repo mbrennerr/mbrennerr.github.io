@@ -1,50 +1,48 @@
-section.skillsBoardContainer {
+.skillsBoardContainer {
   @include containersDefaults();
   background-color: #f25a70;
-  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 70%;
-  justify-items: center;
+  grid-template-rows: 15% 85%;
   align-items: center;
-  border: solid black 1px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  padding: 120px;
+  justify-items: center;
   
-  &:hover{
-    @include containersHover();
+  
+  
+  // &:hover{
+  //   @include containersHover();
+  // }
+
+  .titleContainer{
+    @include defaultBoardsTitleContainers(); 
   }
 
-  .skillsGroup {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-    grid-gap:50px;
-
-    .skillName {
-      background-color:#202020;
-      padding:15px;
-    }
-
-    .skillSVG{
-      background-color:#202020;
-      font-size: 100px;
-      padding:20px;
-      border-radius: 5%;
-      @include highrelief();
-
-    }
-
+  #boardTitle {
+    @include defaultContainersNames();
     @include mobile{
-      grid-template-columns: 1fr 1fr;
       font-size: 20px;
-      grid-gap: 5px;
-      grid-gap:5px;
-      
-      .skillSVG{
-        padding:5px;
-        font-size: 50px;
-      }
+    }
+  }
+
+  #skillsContainer {
+    border: solid 1px black;
+    width: 90%;
+  }
+
+  #skills {
+    display: grid;
+    font-size: 40px;
+    grid-template-columns: 1fr 1fr;
+    border: solid 1px black;
+    
+       
+
+    
+    @include mobile{
+    grid-template-columns: 1fr;
+    font-size: 20px;
+    grid-gap: 5px;
+    grid-gap:5px;
+    
     }  
   }
 
