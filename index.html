@@ -24,27 +24,28 @@
   <body>
     <main>
       <!-- Menu Bar Section -->
-      <header >
-        <nav class="menuContainer">
-          <a href="#hero">Home</a>
-          <a href="#skillsContainer">Skills</a>
-          <a href="#projectContainer">Projects</a>
-          <a href="#aboutMeContainer">AboutMe</a>
-          <a href="#contactsContainer">Contacts</a>
-          <a download id="btnCv" href="CV_MB.pdf">Download CV</a>
+      <header id="header" class="menuContainer">
+        <div>
+          <a  id="menuLogo" href="" >logo</a>
+        </div>
+        <nav id="nav">
+          <ul id="menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skillsContainer">Skills</a></li>
+            <li><a href="#projectContainer">Projects</a></li>
+            <li><a href="#aboutMeContainer">AboutMe</a></li>
+            <li><a href="#contactsContainer">Contacts</a></li>
+          </ul>
         </nav>
       </header>
 
       <!-- Hero Section -->
       <section id="hero"class="heroContainer">
         <article class="nameAndTitleBox">
-          <h1 id="titleName">Márcio Brenner - [MB]</h1>
+          <span id="titleName">Márcio Brenner - [MB]</span>
           <span id="jobTitle" class="maquinaDeEscrever"> Fullstack Developer!</span>
+              <a id="btnCv" download  href="CV_MB.pdf">Download CV</a>          
         </article>
-        <div>
-          <span class="iconify" data-icon="fa:home"></span>
-        </div>
-
       </section>
       <!-- skills section -->
       <section 

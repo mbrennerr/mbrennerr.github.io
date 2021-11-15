@@ -12,29 +12,43 @@
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
 
+  
   .nameAndTitleBox {
-    // background: rgba(149, 152, 153, 0.9);
-    // box-shadow: 0px 15px 10px #f25a70;
+    display: grid;
     align-self: flex-start;
     padding: 60px 60px;
     margin-left: 20px;
     @include highrelief();
+
     
-    &:hoover {
-      cursor: pointer;
+    
+    #titleName {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color:#f25a70;
     }
+
+    #jobTitle {
+      font-size:25px;
+    }
+
+    #btnCv {
+      background-color: #202020;
+      border-radius: 4px;
+      color: #ffffff;
+      padding: 20px 30px;
+      width:40%;  
+      text-transform: uppercase;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      margin-top: 40px;
+     
+    }
+
   }
 
 
-  h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    color:#f25a70;
-  }
+  
 
-  span {
-    font-size:25px;
-    
-  }
+  
     
 }  

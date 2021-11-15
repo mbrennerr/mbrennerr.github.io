@@ -1,4 +1,5 @@
 
+
 // função que escreve job title;
 
 function typeWrite(elemento) {
@@ -36,13 +37,13 @@ const sr = ScrollReveal({
   });
 
   sr.reveal('.heroContainer',{
-    origin: 'left',
+    origin: 'top',
     delay: 200,
     
   });
 
   sr.reveal('.nameAndTitleBox',{
-    origin: 'top',
+    origin: 'right',
     delay: 300
     
   });
@@ -50,19 +51,19 @@ const sr = ScrollReveal({
 
 
   sr.reveal('.skillsBoardContainer',{
-    origin: 'left',
+    origin: 'top',
     delay: 200,
     
   });
 
   sr.reveal('.projectsContainer',{
-    origin: 'left',
+    origin: 'top',
     delay: 200,
     
   });
 
   sr.reveal('.aboutMeContainer',{
-    origin: 'left',
+    origin: 'top',
     delay: 200,
     
   });
