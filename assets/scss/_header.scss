@@ -30,11 +30,11 @@
     @include highrelief();
     
     &:hover {
-      color:#29b45e;
+      color:$defaultButtonHoverColors;
       // font-size: 25px;
       // transition: all 0.5s ease-in-out;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-      // pading: 10px 20px;
+      // padding: 10px 20px;
     }
   }
 

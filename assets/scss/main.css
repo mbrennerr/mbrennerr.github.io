@@ -170,6 +170,9 @@ body ul {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   margin-top: 40px;
 }
+.heroContainer .nameAndTitleBox #btnCv:hover {
+  color: #29b45e;
+}
 @media (max-width: 600px) {
   .heroContainer .nameAndTitleBox {
     height: 100%;
