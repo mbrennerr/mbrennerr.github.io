@@ -2,11 +2,7 @@ $defaultFont: "Press Start 2P",cursive;
 $defaultTextColor: white;
 $defaultBackGroundColor: #FE6D3F;
 $defaultButtonHoverColors: #29b45e;
-
-
-
-
-
+$defaultContainersTitlesFont: "Press Start 2P", Cursive;
 
 
 // MIXINS
@@ -23,8 +19,6 @@ $defaultButtonHoverColors: #29b45e;
   width: 100vw;
   height:100vh;
   display: grid;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border: solid black 1px;
 }
 
@@ -34,7 +28,7 @@ $defaultButtonHoverColors: #29b45e;
 }
 
 
-// adiciona o efeito de autorelevos nos intens;
+// adiciona o efeito de autorelevo nos intens;
 @mixin highrelief() {
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
@@ -42,9 +36,9 @@ $defaultButtonHoverColors: #29b45e;
 @mixin defaultContainersNames{
   margin-bottom: 40px;
   color:aliceblue;
+  font-family: $defaultContainersTitlesFont;
   font-size:50px;
-  // border: solid black 1px;
-  
+  @include highrelief();
   
 }
 // configura as divs que contem os nomes dos Containers;
@@ -63,3 +57,11 @@ $defaultButtonHoverColors: #29b45e;
     @content;
   }
 }
+
+
+
+
+
+
+
+

@@ -1,17 +1,46 @@
-section.projectsContainer {
+#projectsContainer {
   @include containersDefaults();
-  background-color: #000000;
+  background-color: #202020;
   color: #ffffff;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-rows: 10% 90%;
-  grid-template-columns: 1fr;
+  grid-template-rows: 20% 40% 40%;
   align-items: center;
   justify-items: center;
-  transition: all 0.5s;
-  padding:130px;
 
   &:hover {
     @include containersHover();
   }
+
+  .titleContainer{
+    @include defaultBoardsTitleContainers();
+    @include highrelief(); 
+  }
+
+  #boardTitle {
+    @include defaultContainersNames();
+
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+
+  #container {
+    height: 50px;
+    background-color: #CCC;
+    // position: relative;
+    border: solid rgb(228, 219, 219) 1px;
+  }
+
+  #container #progress-bar{
+    // position: absolute;
+    height: 100%;
+    background-color: #0fd439;
+    animation: progress-animation 5s infinite;
+  }
+
+
+  // @keyframes progress-animation{
+  //   0% { width: 0%; } 
+  //   100% { width: 100%}
+  // }
+
 }

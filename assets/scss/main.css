@@ -43,6 +43,7 @@ body ul {
   align-items: center;
   background-color: #3d64d4;
   box-shadow: 0px 15px 10px #aa61c7;
+  padding: 0 40px;
 }
 .menuContainer #btnMobile {
   display: none;
@@ -128,8 +129,6 @@ body ul {
   width: 100vw;
   height: 100vh;
   display: grid;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border: solid black 1px;
   grid-template-columns: 1fr 1fr;
   align-content: center;
@@ -195,12 +194,10 @@ body ul {
   width: 100vw;
   height: 100vh;
   display: grid;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border: solid black 1px;
   background-color: #f25a70;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 20% 80%;
   align-items: center;
   justify-items: center;
 }
@@ -209,11 +206,14 @@ body ul {
   display: grid;
   justify-content: end;
   width: 90%;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
 .skillsBoardContainer #boardTitle {
   margin-bottom: 40px;
   color: aliceblue;
+  font-family: "Press Start 2P", Cursive;
   font-size: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
 @media (max-width: 600px) {
   .skillsBoardContainer #boardTitle {
@@ -239,46 +239,90 @@ body ul {
   }
 }
 
-section.projectsContainer {
+#projectsContainer {
   width: 100vw;
   height: 100vh;
   display: grid;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border: solid black 1px;
-  background-color: #000000;
+  background-color: #202020;
   color: #ffffff;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-rows: 10% 90%;
-  grid-template-columns: 1fr;
+  grid-template-rows: 20% 40% 40%;
   align-items: center;
   justify-items: center;
-  transition: all 0.5s;
-  padding: 130px;
 }
-section.projectsContainer:hover {
+#projectsContainer:hover {
   cursor: pointer;
 }
+#projectsContainer .titleContainer {
+  grid-column: 1/3;
+  display: grid;
+  justify-content: end;
+  width: 90%;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+#projectsContainer #boardTitle {
+  margin-bottom: 40px;
+  color: aliceblue;
+  font-family: "Press Start 2P", Cursive;
+  font-size: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+@media (max-width: 600px) {
+  #projectsContainer #boardTitle {
+    font-size: 20px;
+  }
+}
+#projectsContainer #container {
+  height: 50px;
+  background-color: #CCC;
+  border: solid #e4dbdb 1px;
+}
+#projectsContainer #container #progress-bar {
+  height: 100%;
+  background-color: #0fd439;
+  -webkit-animation: progress-animation 5s infinite;
+          animation: progress-animation 5s infinite;
+}
 
-section.aboutMeContainer {
+.aboutMeContainer {
   width: 100vw;
   height: 100vh;
   display: grid;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border: solid black 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #7C5E99;
   color: #ffffff;
-  font-family: "JetBrains Mono", cursive;
-  font-size: 20px;
-  padding: 30px 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  align-items: center;
+  padding: 10px 50px;
+}
+.aboutMeContainer #titleContainer {
   grid-column: 1/3;
-  margin-bottom: 20px;
   display: grid;
+  justify-content: end;
+  width: 90%;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+.aboutMeContainer #boardTitle {
+  margin-bottom: 40px;
+  color: aliceblue;
+  font-family: "Press Start 2P", Cursive;
+  font-size: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+@media (max-width: 600px) {
+  .aboutMeContainer #boardTitle {
+    font-size: 20px;
+  }
+}
+.aboutMeContainer #aboutMeText {
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+  font-family: "JetBrains Mono", cursive;
+  text-align: justify;
+  font-size: 30px;
+}
+.aboutMeContainer #legendaryBar {
+  border-top: 1px solid #202020;
 }
 
 .footerContainer {

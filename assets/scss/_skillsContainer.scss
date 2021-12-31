@@ -2,7 +2,7 @@
   @include containersDefaults();
   background-color: #f25a70;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 20% 80%;
   align-items: center;
   justify-items: center;
   
@@ -13,11 +13,13 @@
   // }
 
   .titleContainer{
-    @include defaultBoardsTitleContainers(); 
+    @include defaultBoardsTitleContainers();
+    @include highrelief(); 
   }
 
   #boardTitle {
     @include defaultContainersNames();
+    
 
     @include mobile{
       font-size: 20px;

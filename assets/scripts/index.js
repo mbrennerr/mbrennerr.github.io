@@ -38,7 +38,7 @@ typeWrite(titulo);
 
 
 
-// função que seta parametros para os elementos Reveals;
+// função que seta parâmetros para os elementos Reveals;
 const sr = ScrollReveal({
   origin:`${''}`,
   distance: "150px",
@@ -99,4 +99,19 @@ const sr = ScrollReveal({
   // // });
 
 
-  
+  //trás os dados do github.
+
+
+  //  função para trazer os repositórios do github;
+
+const url = "https://api.github.com/users/mbrennerr/repos"
+
+function getRepositories() {
+   axios.get(url)
+    .then(response => {
+      const data = response.data
+      repositoriesList.textContent = JSON.stringify(data)
+   })
+   .catch(error => console.log(error))
+}
+  // getRepositories()
