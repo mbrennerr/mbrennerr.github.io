@@ -1,0 +1,81 @@
+.heroContainer {
+  background-image: url("../images/Novo_Hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  @include containersDefaults();
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  background-color: #7c5e99;
+  border: solid black 1px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+  
+  .nameAndTitleBox {
+    display: grid;
+    // border-radius: 5px;
+    width:90%;
+    padding: 60px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 35%;
+    border-top-left-radius: 35%;
+    @include highrelief();
+
+        
+    #titleName {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color:#f25a70;
+    }
+
+    #jobTitle {
+      font-size:25px;
+    }
+
+    #btnCv {
+      background-color: #202020;
+      border-radius: 4px;
+      color: #ffffff;
+      padding: 20px 30px;
+      width:40%;  
+      text-transform: uppercase;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      margin-top: 40px;
+     
+      &:hover {
+        color:$defaultButtonHoverColors;
+      }
+    }
+
+    @include mobile {
+
+      height: 100%;
+      
+      #titleName {
+        font-size: 10px;
+        
+      }
+
+      #jobTitle {
+        font-size: 10px;
+      }
+
+      #btnCv {
+        font-size: 15px;
+        margin-top: 30px;
+        padding: 30px 10px;
+        width: 90%;
+      }
+    }
+
+  }
+
+
+  
+
+  
+    
+}  

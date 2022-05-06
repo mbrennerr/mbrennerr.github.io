@@ -1,0 +1,56 @@
+.skillsBoardContainer {
+  @include containersDefaults();
+  background-color: #f25a70;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+  justify-items: center;
+  
+  
+  
+  // &:hover{
+  //   @include containersHover();
+  // }
+
+  .titleContainer{
+    @include defaultBoardsTitleContainers();
+    @include highrelief(); 
+  }
+
+  #boardTitle {
+    @include defaultContainersNames();
+    
+
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+
+  #skillsContainer {
+    // border: solid 1px black;
+    width: 90%;
+  }
+
+  #skills {
+    display: grid;
+    font-size: 40px;
+    grid-template-columns: 1fr 1fr;
+    // border: solid 1px black;
+    gap: 30px;
+    
+    
+       
+
+    
+    @include mobile{
+    grid-template-columns: 1fr;
+    font-size: 20px;
+    grid-gap: 5px;
+    grid-gap:5px;
+    gap:10px
+    
+    }  
+  }
+
+
+}

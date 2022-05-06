@@ -1,0 +1,36 @@
+.aboutMeContainer {
+  @include containersDefaults();
+  background-color: #7C5E99;
+  color: #ffffff;  
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  align-items: center;
+  padding: 10px 50px;
+
+  
+  #titleContainer{
+    @include defaultBoardsTitleContainers();
+    @include highrelief();
+    // border: solid 1px #202020
+  }
+
+  #boardTitle {
+    @include defaultContainersNames();
+    // border: solid 1px #202020;
+
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+  #aboutMeText {
+    @include highrelief();
+    font-family: "JetBrains Mono", cursive;
+    // border: 1px solid #202020;
+    text-align:justify;
+    font-size: 30px;
+  }
+
+  #legendaryBar{
+    border-top: 1px solid #202020;
+  }
+}

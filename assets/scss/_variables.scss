@@ -1,0 +1,67 @@
+$defaultFont: "Press Start 2P",cursive;
+$defaultTextColor: white;
+$defaultBackGroundColor: #FE6D3F;
+$defaultButtonHoverColors: #29b45e;
+$defaultContainersTitlesFont: "Press Start 2P", Cursive;
+
+
+// MIXINS
+
+// configura menu e footer;
+@mixin defaultMenus() {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+
+}
+// configura os containers principais;
+@mixin containersDefaults() {
+  width: 100vw;
+  height:100vh;
+  display: grid;
+  border: solid black 1px;
+}
+
+// efeito de animação dos containers;
+@mixin containersHover() {
+ cursor: pointer;
+}
+
+
+// adiciona o efeito de autorelevo nos intens;
+@mixin highrelief() {
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+
+@mixin defaultContainersNames{
+  margin-bottom: 40px;
+  color:aliceblue;
+  font-family: $defaultContainersTitlesFont;
+  font-size:50px;
+  @include highrelief();
+  
+}
+// configura as divs que contem os nomes dos Containers;
+@mixin defaultBoardsTitleContainers {
+  grid-column: 1/3;
+  // border: solid black 1px;
+  display: grid;
+  justify-content: end;
+  width: 90%;
+
+}
+
+// include padrão para adicionar estilo mobile nos componentes;
+@mixin mobile {
+  @media (max-width: 600px){
+    @content;
+  }
+}
+
+
+
+
+
+
+
+
