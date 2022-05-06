@@ -275,7 +275,7 @@ body ul {
 #projectsContainer #container {
   height: 50px;
   background-color: #CCC;
-  border: solid #e4dbdb 1px;
+  border: solid rgb(228, 219, 219) 1px;
 }
 #projectsContainer #container #progress-bar {
   height: 100%;
@@ -329,7 +329,7 @@ body ul {
   width: 100vw;
   height: 100px;
   display: flex;
-  background-color: #16191a;
+  background-color: rgb(22, 25, 26);
   color: #ffffff;
   border: solid 1px;
   padding: 20px 50px;
