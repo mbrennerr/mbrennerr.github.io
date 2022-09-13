@@ -1,6 +1,6 @@
 #projectsContainer {
   @include containersDefaults();
-  background-color: #202020;
+  background-color: rgb(35, 36, 43);
   color: #ffffff;
   grid-template-rows: 20% 40% 40%;
   align-items: center;

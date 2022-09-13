@@ -1,8 +1,10 @@
-$defaultFont: "Press Start 2P",cursive;
-$defaultTextColor: white;
-$defaultBackGroundColor: #FE6D3F;
-$defaultButtonHoverColors: #29b45e;
+//$defaultFont: "Press Start 2P",cursive;
+$defaultFont: "JetBrains Mono",cursive;
 $defaultContainersTitlesFont: "Press Start 2P", Cursive;
+$defaultTextColor: white;
+$defaultBackGroundColor: rgb(35, 36, 43);
+$baseColor: rgb(35, 36, 43);
+$defaultButtonHoverColors: #0ae6b6;
 
 
 // MIXINS

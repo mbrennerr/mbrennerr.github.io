@@ -1,6 +1,6 @@
 .skillsBoardContainer {
   @include containersDefaults();
-  background-color: #f25a70;
+  background-color: rgb(35, 36, 43);
   grid-template-columns: 1fr;
   grid-template-rows: 20% 80%;
   align-items: center;

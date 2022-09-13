@@ -1,6 +1,6 @@
 .aboutMeContainer {
   @include containersDefaults();
-  background-color: #7C5E99;
+  background-color: rgb(35, 36, 43);
   color: #ffffff;  
   grid-template-columns: 1fr;
   grid-template-rows: 25% 75%;
