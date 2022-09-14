@@ -12,7 +12,7 @@ html {
 
 body {
   color: white;
-  background-color: rgb(35, 36, 43);
+  background-color: #23242b;
   font-family: "JetBrains Mono", cursive;
   width: 100vw;
   height: 100vh;
@@ -41,7 +41,7 @@ body ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(35, 36, 43);
+  background-color: #23242b;
   padding: 0 40px;
 }
 .menuContainer #btnMobile {
@@ -201,16 +201,15 @@ body ul {
   justify-items: center;
 }
 .skillsBoardContainer .titleContainer {
-  grid-column: 1/3;
   display: grid;
   justify-content: end;
   width: 90%;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
 .skillsBoardContainer #boardTitle {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: aliceblue;
-  font-family: "Press Start 2P", Cursive;
+  font-family: "Roboto", Mono;
   font-size: 50px;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
@@ -226,6 +225,7 @@ body ul {
   display: grid;
   font-size: 40px;
   grid-template-columns: 1fr 1fr;
+  border: solid 1px black;
   gap: 30px;
 }
 @media (max-width: 600px) {
@@ -253,16 +253,15 @@ body ul {
   cursor: pointer;
 }
 #projectsContainer .titleContainer {
-  grid-column: 1/3;
   display: grid;
   justify-content: end;
   width: 90%;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
 #projectsContainer #boardTitle {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: aliceblue;
-  font-family: "Press Start 2P", Cursive;
+  font-family: "Roboto", Mono;
   font-size: 50px;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
@@ -288,24 +287,43 @@ body ul {
   height: 100vh;
   display: grid;
   border: solid black 1px;
-  background-color: rgb(35, 36, 43);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10fr 30fr 60fr;
+  grid-template-areas: "titleCt titleCt titleCt titleCt" "aboutMe aboutMe aboutMe aboutMe" "form1 form1  form2 form2";
+  gap: 30px;
+  padding: 3rem;
   color: #ffffff;
-  grid-template-columns: 1fr;
-  grid-template-rows: 25% 75%;
-  align-items: center;
-  padding: 10px 50px;
 }
 .aboutMeContainer #titleContainer {
-  grid-column: 1/3;
+  grid-area: titleCt;
   display: grid;
   justify-content: end;
   width: 90%;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
+.aboutMeContainer #aboutMeText {
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+  grid-area: aboutMe;
+  font-family: "JetBrains Mono", cursive;
+  text-align: justify;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.aboutMeContainer .exp {
+  background: #2d2d2d;
+  padding: 0.5rem;
+  border-bottom: #0ae6b6 3px solid;
+}
+.aboutMeContainer #exp1 {
+  grid-area: form1;
+}
+.aboutMeContainer #exp2 {
+  grid-area: form2;
+}
 .aboutMeContainer #boardTitle {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: aliceblue;
-  font-family: "Press Start 2P", Cursive;
+  font-family: "Roboto", Mono;
   font-size: 50px;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
@@ -313,12 +331,6 @@ body ul {
   .aboutMeContainer #boardTitle {
     font-size: 20px;
   }
-}
-.aboutMeContainer #aboutMeText {
-  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
-  font-family: "JetBrains Mono", cursive;
-  text-align: justify;
-  font-size: 30px;
 }
 .aboutMeContainer #legendaryBar {
   border-top: 1px solid #202020;
@@ -330,7 +342,6 @@ body ul {
   display: flex;
   background-color: rgb(35, 36, 43);
   color: #ffffff;
-  border: solid 1px;
   padding: 20px 50px;
   display: flex;
   align-items: center;
