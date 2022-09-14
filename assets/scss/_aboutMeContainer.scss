@@ -1,34 +1,57 @@
 .aboutMeContainer {
   @include containersDefaults();
-  background-color: rgb(35, 36, 43);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10fr 30fr 60fr;
+  grid-template-areas:
+  'titleCt titleCt titleCt titleCt' 
+  'aboutMe aboutMe aboutMe aboutMe'
+  'form1 form1  form2 form2';
+  gap: 30px;
+  padding: 3rem;
   color: #ffffff;  
-  grid-template-columns: 1fr;
-  grid-template-rows: 25% 75%;
-  align-items: center;
-  padding: 10px 50px;
-
-  
+   
   #titleContainer{
+    grid-area: titleCt;
+    // grid-column: 1/4;
+    // border: solid 1px red
     @include defaultBoardsTitleContainers();
     @include highrelief();
-    // border: solid 1px #202020
   }
+
+  #aboutMeText {
+    @include highrelief();
+    grid-area: aboutMe;
+    // grid-column: 1/4;
+    // border: 1px solid red;
+    font-family: "JetBrains Mono", cursive;
+    text-align:justify;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  .exp {
+    background: lighten( $secondaryBackGroundColor, 5%);
+    padding:0.5rem;
+    border-bottom: $lightEffectColor 3px solid;
+  }
+  #exp1 {
+    // border: solid 1px red;
+    grid-area: form1;
+  }
+  #exp2 {
+    // border: solid 1px red;
+    grid-area: form2;
+  }
+
 
   #boardTitle {
     @include defaultContainersNames();
-    // border: solid 1px #202020;
+    // border: solid 1px red;
 
     @include mobile{
       font-size: 20px;
     }
   }
-  #aboutMeText {
-    @include highrelief();
-    font-family: "JetBrains Mono", cursive;
-    // border: 1px solid #202020;
-    text-align:justify;
-    font-size: 30px;
-  }
+  
 
   #legendaryBar{
     border-top: 1px solid #202020;
