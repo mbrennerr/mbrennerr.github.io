@@ -294,6 +294,17 @@ body ul {
   padding: 3rem;
   color: #ffffff;
 }
+@media (max-width: 600px) {
+  .aboutMeContainer {
+    width: 100vw;
+    height: 100%;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 30fr 25fr 25fr;
+    grid-template-areas: "titleCt" "aboutMe" "form1" "form2";
+  }
+}
 .aboutMeContainer #titleContainer {
   grid-area: titleCt;
   display: grid;
@@ -306,8 +317,16 @@ body ul {
   grid-area: aboutMe;
   font-family: "JetBrains Mono", cursive;
   text-align: justify;
-  font-size: 1.8rem;
+  font-size: 1rem;
   padding: 1rem;
+}
+@media (max-width: 600px) {
+  .aboutMeContainer #aboutMeText {
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+  }
 }
 .aboutMeContainer .exp {
   background: #2d2d2d;
@@ -320,7 +339,7 @@ body ul {
 .aboutMeContainer #exp2 {
   grid-area: form2;
 }
-.aboutMeContainer #boardTitle {
+.aboutMeContainer #exp2 #boardTitle {
   margin-bottom: 20px;
   color: aliceblue;
   font-family: "Roboto", Mono;
@@ -328,11 +347,11 @@ body ul {
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
 @media (max-width: 600px) {
-  .aboutMeContainer #boardTitle {
+  .aboutMeContainer #exp2 #boardTitle {
     font-size: 20px;
   }
 }
-.aboutMeContainer #legendaryBar {
+.aboutMeContainer #exp2 #legendaryBar {
   border-top: 1px solid #202020;
 }
 
