@@ -1,9 +1,11 @@
 //$defaultFont: "Press Start 2P",cursive;
 $defaultFont: "JetBrains Mono",cursive;
-$defaultContainersTitlesFont: "Press Start 2P", Cursive;
+$defaultContainersTitlesFont: "Roboto", Mono;
 $defaultTextColor: white;
-$defaultBackGroundColor: rgb(35, 36, 43);
-$baseColor: rgb(35, 36, 43);
+$defaultBackGroundColor: #23242b;
+$secondaryBackGroundColor: #202020;
+$lightEffectColor: #0ae6b6;
+$baseColor: #23242b;
 $defaultButtonHoverColors: #0ae6b6;
 
 
@@ -36,7 +38,8 @@ $defaultButtonHoverColors: #0ae6b6;
 }
 
 @mixin defaultContainersNames{
-  margin-bottom: 40px;
+  // grid-column: 1/4;
+  margin-bottom: 20px;
   color:aliceblue;
   font-family: $defaultContainersTitlesFont;
   font-size:50px;
@@ -45,8 +48,7 @@ $defaultButtonHoverColors: #0ae6b6;
 }
 // configura as divs que contem os nomes dos Containers;
 @mixin defaultBoardsTitleContainers {
-  grid-column: 1/3;
-  // border: solid black 1px;
+  // border: solid red 1px;
   display: grid;
   justify-content: end;
   width: 90%;
