@@ -42,8 +42,8 @@
     // border: 1px solid red;
     font-family: "JetBrains Mono", cursive;
     text-align:justify;
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 2rem;
     @include mobile{
       font-size: 1rem;
       width: 100%;
@@ -60,6 +60,7 @@
   #exp1 {
     // border: solid 1px red;
     grid-area: form1;
+    padding: 2rem;
     @include mobile {
       // text-align: justify;
       // #text1{
@@ -70,6 +71,7 @@
   #exp2 {
     // border: solid 1px red;
     grid-area: form2;
+    padding: 2rem;
     @include mobile {
       // text-align: justify;
       //  #text2{

@@ -317,8 +317,8 @@ body ul {
   grid-area: aboutMe;
   font-family: "JetBrains Mono", cursive;
   text-align: justify;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 @media (max-width: 600px) {
   .aboutMeContainer #aboutMeText {
@@ -335,9 +335,11 @@ body ul {
 }
 .aboutMeContainer #exp1 {
   grid-area: form1;
+  padding: 2rem;
 }
 .aboutMeContainer #exp2 {
   grid-area: form2;
+  padding: 2rem;
 }
 .aboutMeContainer #exp2 #boardTitle {
   margin-bottom: 20px;
