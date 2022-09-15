@@ -2,19 +2,24 @@
   @include containersDefaults();
   background-color: rgb(35, 36, 43);
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 80%;
-  align-items: center;
-  justify-items: center;
+  grid-template-rows: 20% 70%;
+  padding: 2rem;
+  gap: 1rem;
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80%;
+    width: 100%;
+    
+  }
   
   
-  
-  // &:hover{
-  //   @include containersHover();
-  // }
 
-  .titleContainer{
+  #titleContainer{
     @include defaultBoardsTitleContainers();
-    @include highrelief(); 
+    @include highrelief();
+    // border: solid 1px red;
+    
+    
   }
 
   #boardTitle {
@@ -27,28 +32,31 @@
   }
 
   #skillsContainer {
-    // border: solid 1px black;
-    width: 90%;
+    // border: solid 1px red;
+    background: lighten( $secondaryBackGroundColor, 5%);
+    padding:0.5rem;
+    border-bottom: $lightEffectColor 3px solid;
+    width: 100%;
+    padding: 4rem;
+    @include mobile{
+      padding: 1rem;
+    }
+
   }
 
   #skills {
     display: grid;
     font-size: 40px;
-    grid-template-columns: 1fr 1fr;
-    border: solid 1px black;
-    gap: 30px;
-    
-    
-       
-
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    align-content: center;
+    gap: 50px;
     
     @include mobile{
-    grid-template-columns: 1fr;
-    font-size: 20px;
-    grid-gap: 5px;
-    grid-gap:5px;
-    gap:10px
-    
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 15px;
+    // grid-gap: 5px;
+     
     }  
   }
 
