@@ -44,6 +44,11 @@ body ul {
   background-color: #23242b;
   padding: 0 40px;
 }
+@media (max-width: 600px) {
+  .menuContainer {
+    width: 100%;
+  }
+}
 .menuContainer #btnMobile {
   display: none;
 }
@@ -139,6 +144,7 @@ body ul {
   .heroContainer {
     grid-template-columns: 1fr;
     background-image: none;
+    width: 100%;
   }
 }
 .heroContainer .nameAndTitleBox {
@@ -196,7 +202,7 @@ body ul {
   border: solid black 1px;
   background-color: rgb(35, 36, 43);
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 70%;
+  grid-template-rows: 10% 80%;
   padding: 2rem;
   gap: 1rem;
 }
@@ -259,14 +265,24 @@ body ul {
   border: solid black 1px;
   background-color: rgb(35, 36, 43);
   color: #ffffff;
-  grid-template-rows: 20% 40% 40%;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 90%;
+  padding: 2rem;
+  gap: 1rem;
+  border: blue solid 1px;
+}
+@media (max-width: 600px) {
+  #projectsContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80%;
+    width: 100%;
+  }
 }
 #projectsContainer:hover {
   cursor: pointer;
 }
-#projectsContainer .titleContainer {
+#projectsContainer #titleContainer {
+  border: red solid 1px;
   display: grid;
   justify-content: end;
   width: 90%;
@@ -284,16 +300,45 @@ body ul {
     font-size: 20px;
   }
 }
-#projectsContainer #container {
-  height: 50px;
-  background-color: #CCC;
-  border: solid rgb(228, 219, 219) 1px;
+#projectsContainer #galeryContainer {
+  box-sizing: border-box;
+  border: green solid 5px;
+  gap: 1rem;
 }
-#projectsContainer #container #progress-bar {
+@media (max-width: 600px) {
+  #projectsContainer #galeryContainer {
+    width: 100%;
+  }
+}
+#projectsContainer #repositories {
+  display: grid;
+  border: pink solid 1px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+#projectsContainer #repositories .repository {
+  border: red solid 5px;
+}
+#projectsContainer #repositories .repository img {
+  width: 100%;
   height: 100%;
-  background-color: #0fd439;
-  -webkit-animation: progress-animation 5s infinite;
-          animation: progress-animation 5s infinite;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  #projectsContainer #repositories .repository {
+    width: 90%;
+    height: 100px;
+  }
+}
+@media (max-width: 600px) {
+  #projectsContainer #repositories {
+    grid-template-columns: 1fr;
+  }
 }
 
 .aboutMeContainer {
@@ -310,7 +355,7 @@ body ul {
 }
 @media (max-width: 600px) {
   .aboutMeContainer {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     gap: 10px;
     padding: 10px;
@@ -381,4 +426,9 @@ body ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media (max-width: 600px) {
+  .footerContainer {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
