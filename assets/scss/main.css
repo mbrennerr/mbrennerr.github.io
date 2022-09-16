@@ -464,4 +464,7 @@ body ul {
   to {
     opacity: 1;
   }
+}
+.popup:hover .popuptext {
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */
