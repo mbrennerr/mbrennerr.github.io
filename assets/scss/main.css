@@ -85,6 +85,7 @@ body ul {
     overflow-y: auto;
   }
   .menuContainer #btnMobile {
+    color: #ffffff;
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -94,7 +95,7 @@ body ul {
     gap: 0.5rem;
   }
   .menuContainer #hamburguer {
-    color: #202020;
+    color: #ffffff;
     display: block;
     border-top: 2px solid;
     width: 20px;
@@ -256,6 +257,7 @@ body ul {
   height: 100vh;
   display: grid;
   border: solid black 1px;
+  box-sizing: border-box;
   background-color: rgb(35, 36, 43);
   color: #ffffff;
   grid-template-columns: 1fr;
@@ -266,11 +268,11 @@ body ul {
 }
 @media (max-width: 600px) {
   #projectsContainer {
-    height: 100vh;
+    height: 100%;
     gap: 10px;
     padding: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 5% 90%;
+    grid-template-rows: 5f 90fr;
   }
 }
 #projectsContainer:hover {
@@ -296,11 +298,12 @@ body ul {
   }
 }
 #projectsContainer #repositories {
+  border: pink solid 1px;
   background: #2d2d2d;
   padding: 0.5rem;
   border-bottom: #0ae6b6 3px solid;
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -308,7 +311,7 @@ body ul {
   #projectsContainer #repositories {
     grid-template-columns: 1fr;
     font-size: 15px;
-    gap: 2rem;
+    gap: 1.9rem;
     height: 100%;
   }
 }

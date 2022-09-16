@@ -1,5 +1,6 @@
 #projectsContainer {
   @include containersDefaults();
+  box-sizing: border-box;
   background-color: rgb(35, 36, 43);
   color: #ffffff;
   grid-template-columns: 1fr;
@@ -9,11 +10,11 @@
   border: blue solid 1px;
   // justify-content: space-evenly;
   @include mobile {
-    height: 100vh;
+    height: 100%;
     gap: 10px;
     padding: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 5% 90% ;
+    grid-template-rows: 5f 90fr ;
   }
   &:hover {
     @include containersHover();
@@ -33,18 +34,18 @@
   }
   
   #repositories{
-    // border: pink solid 1px;
+    border: pink solid 1px;
     background: lighten( $secondaryBackGroundColor, 5%);
     padding:0.5rem;
     border-bottom: $lightEffectColor 3px solid;
     width: 100%;
-    padding: 4rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     @include mobile{
       grid-template-columns: 1fr;
       font-size: 15px;
-      gap: 2rem;
+      gap: 1.9rem;
       height: 100%;
     }
 
