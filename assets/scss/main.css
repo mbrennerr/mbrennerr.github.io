@@ -294,7 +294,6 @@ body ul {
   }
 }
 #projectsContainer #repositories {
-  border: pink solid 1px;
   background: #2d2d2d;
   padding: 0.5rem;
   border-bottom: #0ae6b6 3px solid;
@@ -302,6 +301,12 @@ body ul {
   padding: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 600px) {
+  #projectsContainer #repositories {
+    grid-template-columns: 1fr 1fr;
+    font-size: 15px;
+  }
 }
 #projectsContainer #repositories .repository {
   width: 350px;
@@ -315,13 +320,8 @@ body ul {
 }
 @media (max-width: 600px) {
   #projectsContainer #repositories .repository {
-    width: 150px;
+    width: 100px;
     height: 100px;
-  }
-}
-@media (max-width: 600px) {
-  #projectsContainer #repositories {
-    grid-template-columns: 1fr;
   }
 }
 
