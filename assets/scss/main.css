@@ -85,7 +85,7 @@ body ul {
     overflow-y: auto;
   }
   .menuContainer #btnMobile {
-    color: #ffffff;
+    color: #aa61c7;
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -95,7 +95,7 @@ body ul {
     gap: 0.5rem;
   }
   .menuContainer #hamburguer {
-    color: #ffffff;
+    color: #aa61c7;
     display: block;
     border-top: 2px solid;
     width: 20px;
