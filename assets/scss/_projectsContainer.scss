@@ -9,9 +9,11 @@
   border: blue solid 1px;
   // justify-content: space-evenly;
   @include mobile {
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 80%;
-    padding: 1rem;
+    grid-template-rows: 5% 90% ;
   }
   &:hover {
     @include containersHover();
@@ -43,6 +45,7 @@
       grid-template-columns: 1fr;
       font-size: 15px;
       gap: 2rem;
+      height: 100%;
     }
 
     .repository {

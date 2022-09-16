@@ -266,9 +266,11 @@ body ul {
 }
 @media (max-width: 600px) {
   #projectsContainer {
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 80%;
-    padding: 1rem;
+    grid-template-rows: 5% 90%;
   }
 }
 #projectsContainer:hover {
@@ -307,6 +309,7 @@ body ul {
     grid-template-columns: 1fr;
     font-size: 15px;
     gap: 2rem;
+    height: 100%;
   }
 }
 #projectsContainer #repositories .repository {
