@@ -40,8 +40,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     @include mobile{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       font-size: 15px;
+      gap: 2rem;
     }
 
     .repository {
@@ -55,9 +56,9 @@
         border-radius: 10px;
       }
       @include mobile{
-        width: 100px;
-        height: 100px;
-      }
+        width: 100%;
+        height: 150px;
+        }
     }
   }
 }
