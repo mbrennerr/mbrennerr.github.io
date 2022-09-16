@@ -4,14 +4,15 @@
   color: #ffffff;
   grid-template-columns: 1fr;
   grid-template-rows: 10% 90%;
-  padding: 2rem;
+  padding: 3rem;
   gap: 1rem; 
   border: blue solid 1px;
+  // justify-content: space-evenly;
 
   @include mobile {
     grid-template-columns: 1fr;
     grid-template-rows: 10% 80%;
-    width: 100%;
+    padding: 1rem;
   }
   &:hover {
     @include containersHover();
@@ -30,34 +31,27 @@
     }
   }
   
-  #galeryContainer {
-    box-sizing: border-box;
-    border: green solid 5px;
-    gap: 1rem;
-    @include mobile{
-      width: 100%; 
-    }
-    
-  }
-
   #repositories{
     display: grid;
+    background: lighten( $secondaryBackGroundColor, 5%);
+    padding:0.5rem;
+    border-bottom: $lightEffectColor 3px solid;
     border: pink solid 1px;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    align-content: center;
-    width: 100%;
+    padding: 3rem;
     gap: 2rem;
     .repository {
+      width: 350px;
+      height: 250px;
       border: red solid 5px;
       img{
         width: 100%;
         height:100%;
-        object-fit: cover;
+        // object-fit: cover;
         border-radius: 10px;
       }
       @include mobile{
-        width: 90%;
+        width: 150px;
         height: 100px;
       }
     }
