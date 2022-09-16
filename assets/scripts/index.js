@@ -1,7 +1,17 @@
 
 function newPopup() {
-  const popupWindow = document.getElementById("myPopup");
-  popupWindow.classList.toggle('show');
+  const popupWindow1 = document.getElementById("myPopup1");
+  const popupWindow2 = document.getElementById("myPopup2");
+  const popupWindow3 = document.getElementById("myPopup3");
+
+  if (onclick = "myPopup1") 
+    popupWindow1.classList.toggle("show");
+  else if (onclick = "myPopup2") 
+    popupWindow2.classList.toggle("show");
+  else if (onclick = "myPopup3") 
+    popupWindow3.classList.toggle("show");
+  return false;
+  
 }
 
 
@@ -96,16 +106,6 @@ const sr = ScrollReveal({
     delay: 200,
     
   });
-
-  
-  // sr.reveal('.footerContainer',{
-  //   duration: 5000,
-  //   origin: 'right',
-  //   distance: '-100px'
-  // // });
-
-
-  //trás os dados do github.
 
 
   //  função para trazer os repositórios do github;

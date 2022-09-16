@@ -8,7 +8,6 @@
   gap: 1rem; 
   border: blue solid 1px;
   // justify-content: space-evenly;
-
   @include mobile {
     grid-template-columns: 1fr;
     grid-template-rows: 10% 80%;
@@ -32,14 +31,15 @@
   }
   
   #repositories{
-    display: grid;
+    border: pink solid 1px;
     background: lighten( $secondaryBackGroundColor, 5%);
     padding:0.5rem;
     border-bottom: $lightEffectColor 3px solid;
-    border: pink solid 1px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 3rem;
-    gap: 2rem;
+    width: 100%;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
     .repository {
       width: 350px;
       height: 250px;

@@ -294,14 +294,14 @@ body ul {
   }
 }
 #projectsContainer #repositories {
-  display: grid;
+  border: pink solid 1px;
   background: #2d2d2d;
   padding: 0.5rem;
   border-bottom: #0ae6b6 3px solid;
-  border: pink solid 1px;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3rem;
-  gap: 2rem;
+  width: 100%;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 #projectsContainer #repositories .repository {
   width: 350px;
@@ -354,6 +354,18 @@ body ul {
   width: 90%;
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
 }
+.aboutMeContainer #boardTitle {
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-family: "Roboto", Mono;
+  font-size: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
+}
+@media (max-width: 600px) {
+  .aboutMeContainer #boardTitle {
+    font-size: 20px;
+  }
+}
 .aboutMeContainer #aboutMeText {
   filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
   grid-area: aboutMe;
@@ -383,22 +395,6 @@ body ul {
   grid-area: form2;
   padding: 2rem;
 }
-.aboutMeContainer #exp2 #boardTitle {
-  margin-bottom: 20px;
-  color: aliceblue;
-  font-family: "Roboto", Mono;
-  font-size: 50px;
-  filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
-}
-@media (max-width: 600px) {
-  .aboutMeContainer #exp2 #boardTitle {
-    font-size: 20px;
-  }
-}
-.aboutMeContainer #exp2 #legendaryBar {
-  border-top: 1px solid #202020;
-}
-
 .footerContainer {
   width: 100vw;
   height: 100px;

@@ -33,6 +33,16 @@
     @include defaultBoardsTitleContainers();
     @include highrelief();
   }
+  #boardTitle {
+    @include defaultContainersNames();
+    // border: solid 1px red;
+
+    @include mobile{
+      font-size: 20px;
+              
+      }
+      
+  }
 
   #aboutMeText {
     @include highrelief();
@@ -76,24 +86,6 @@
       //  #text2{
       //  visibility: hidden;
       //  }
-  }
-
-
-  #boardTitle {
-    @include defaultContainersNames();
-    // border: solid 1px red;
-
-    @include mobile{
-      font-size: 20px;
-              
-      }
-      
     }
-  
-  
-
-  #legendaryBar{
-    border-top: 1px solid #202020;
   }
-}
 }
