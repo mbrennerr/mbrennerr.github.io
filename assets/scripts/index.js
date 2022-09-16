@@ -1,12 +1,7 @@
 
 function newPopup() {
-  popupWindow = window.open(
-    'popup.html',
-    'popup',
-    'height=400',
-    "width=600, left=110, top=100, resizable=yes, scrollbars=no"
-  )
-  popupWindow.document.write("<p>olá, alo alo alo</p>")
+  const popupWindow = document.getElementById("myPopup");
+  popupWindow.classList.toggle('show');
 }
 
 
