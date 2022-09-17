@@ -7,7 +7,7 @@
   grid-template-rows: 10% 90%;
   padding: 3rem;
   gap: 1rem; 
-  border: blue solid 1px;
+  // border: blue solid 1px;
   // justify-content: space-evenly;
   @include mobile {
     height: 100vh;
@@ -21,7 +21,7 @@
   }
 
   #titleContainer{
-    border: red solid 1px;
+    // border: red solid 1px;
     @include defaultBoardsTitleContainers();
     @include highrelief(); 
   }
@@ -34,7 +34,7 @@
   }
   
   #repositories{
-    border: pink solid 1px;
+    // border: pink solid 1px;
     background: lighten( $secondaryBackGroundColor, 5%);
     padding:0.5rem;
     border-bottom: $lightEffectColor 3px solid;

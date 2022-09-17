@@ -264,7 +264,6 @@ body ul {
   grid-template-rows: 10% 90%;
   padding: 3rem;
   gap: 1rem;
-  border: blue solid 1px;
 }
 @media (max-width: 600px) {
   #projectsContainer {
@@ -279,7 +278,6 @@ body ul {
   cursor: pointer;
 }
 #projectsContainer #titleContainer {
-  border: red solid 1px;
   display: grid;
   justify-content: end;
   width: 90%;
@@ -298,7 +296,6 @@ body ul {
   }
 }
 #projectsContainer #repositories {
-  border: pink solid 1px;
   background: #2d2d2d;
   padding: 0.5rem;
   border-bottom: #0ae6b6 3px solid;
